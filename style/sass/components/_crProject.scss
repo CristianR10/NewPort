@@ -1,0 +1,29 @@
+.crProject {
+  ul {
+    margin-right: 2rem;
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__tab {
+    li {
+      &::before {
+        content: "";
+        padding: 3px;
+        background: $color-3-600;
+        margin-right: 0.5rem;
+        animation: fadeOut ease 2s infinite;
+      }
+
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

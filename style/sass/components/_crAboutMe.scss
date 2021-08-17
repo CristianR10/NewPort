@@ -1,0 +1,7 @@
+@import "mixin/title";
+
+.crAboutMe {
+  &__text {
+    text-align: justify;
+  }
+}

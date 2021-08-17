@@ -1,0 +1,20 @@
+@import "mixin/title";
+
+body {
+  background: $color-1;
+  margin-top: 1rem;
+
+  * {
+    color: $color-2;
+    font-size: 14px;
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  h1,
+  h2 {
+    @include title();
+  }
+}
